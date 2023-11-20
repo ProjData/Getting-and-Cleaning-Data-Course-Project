@@ -34,7 +34,8 @@ The final data set, tidyDataSet, represents the average of each variable for eac
 
 <details>
   <summary>Click to expand the script run_analysis.R</summary>
-```markdown
+  
+```r
 library(dplyr)
 
 ######################### TRAINING DATASETS #########################
@@ -134,6 +135,7 @@ colnames(tidyDataSet)[3:81] <- paste0("avg-", colnames(tidyDataSet)[3:81])
 write.table(tidyDataSet, "tidyDataSet.txt", row.names = FALSE)
 
 ```
+</details>
 
 ## Acknowledgements
 
